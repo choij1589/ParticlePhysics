@@ -1,0 +1,90 @@
+
+<head>
+    <title>Process results</title>
+    <script type="text/javascript" src="../sortable.js"></script>
+    <link rel=stylesheet href="../mgstyle.css" type="text/css">
+</head>
+<body>
+<script type="text/javascript">
+function UrlExists(url) {
+  var http = new XMLHttpRequest();
+  http.open('HEAD', url, false);
+  try{
+     http.send()
+     }
+  catch(err){
+   return 1==2;
+  }
+  return http.status!=404;
+}
+function check_link(url,alt, id){
+    var obj = document.getElementById(id);
+    if ( ! UrlExists(url)){
+        if ( ! UrlExists(alt)){
+         obj.href = alt;
+         return true;
+        }
+       obj.href = alt;
+       return false;
+    }
+    obj.href = url;
+    return 1==1;
+}
+</script>
+  
+
+ <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>s= 3.0595e+08 &#177 7.38e+05 (pb)</b><br><br>
+<table class="sortable" id='tablesort'>
+<tr><th>Graph</th>
+    <th> Cross-Section</th>
+    <th>Error</th>
+    <th>Events (K)</th>
+    <th>Unwgt</th>
+    <th>Luminosity</th>
+</tr>
+
+<tr><td align=right>/home/choij/workspace/ParticlePhysics/HepTools/MG5_aMC_v2_7_3/gg_to_gg/SubProcesses/P1_gg_gg</td>
+    <td align=right><a id="#/home/choij/workspace/ParticlePhysics/HepTools/MG5_aMC_v2_7_3/gg_to_gg/SubProcesses/P1_gg_gg" href=#/home/choij/workspace/ParticlePhysics/HepTools/MG5_aMC_v2_7_3/gg_to_gg/SubProcesses/P1_gg_gg onClick="check_link('#/home/choij/workspace/ParticlePhysics/HepTools/MG5_aMC_v2_7_3/gg_to_gg/SubProcesses/P1_gg_gg','#/home/choij/workspace/ParticlePhysics/HepTools/MG5_aMC_v2_7_3/gg_to_gg/SubProcesses/P1_gg_gg','#/home/choij/workspace/ParticlePhysics/HepTools/MG5_aMC_v2_7_3/gg_to_gg/SubProcesses/P1_gg_gg')"> 3.059e+08 </a> </td>
+    <td align=right>  7.38e+05</td>
+    <td align=right>  224.056</td>
+    <td align=right>  16697.0</td>
+    <td align=right>  0</td>
+</tr>
+
+</table>
+</center>
+<br><br><br>
+ <dl>  
+
+ <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>s= 3.0595e+08 &#177 7.38e+05 (pb)</b><br><br>
+<table class="sortable" id='tablesort'>
+<tr><th>Graph</th>
+    <th> Cross-Section</th>
+    <th>Error</th>
+    <th>Events (K)</th>
+    <th>Unwgt</th>
+    <th>Luminosity</th>
+</tr>
+
+<tr><td align=right>G1</td>
+    <td align=right><a id="/home/choij/workspace/ParticlePhysics/HepTools/MG5_aMC_v2_7_3/gg_to_gg/SubProcesses/P1_gg_gg/../../SubProcesses/P1_gg_gg/G1/run1_app.log" href=/home/choij/workspace/ParticlePhysics/HepTools/MG5_aMC_v2_7_3/gg_to_gg/SubProcesses/P1_gg_gg/../../SubProcesses/P1_gg_gg/G1/run1_app.log onClick="check_link('/home/choij/workspace/ParticlePhysics/HepTools/MG5_aMC_v2_7_3/gg_to_gg/SubProcesses/P1_gg_gg/../../SubProcesses/P1_gg_gg/G1/run1_app.log','../../SubProcesses/P1_gg_gg/G1/log.txt','/home/choij/workspace/ParticlePhysics/HepTools/MG5_aMC_v2_7_3/gg_to_gg/SubProcesses/P1_gg_gg/../../SubProcesses/P1_gg_gg/G1/run1_app.log')"> 2.773e+05 </a> </td>
+    <td align=right>  3.93e+03</td>
+    <td align=right>  7.016</td>
+    <td align=right>  813.0</td>
+    <td align=right>  0.00293</td>
+</tr>
+
+<tr><td align=right>G2</td>
+    <td align=right><a id="/home/choij/workspace/ParticlePhysics/HepTools/MG5_aMC_v2_7_3/gg_to_gg/SubProcesses/P1_gg_gg/../../SubProcesses/P1_gg_gg/G2/run1_app.log" href=/home/choij/workspace/ParticlePhysics/HepTools/MG5_aMC_v2_7_3/gg_to_gg/SubProcesses/P1_gg_gg/../../SubProcesses/P1_gg_gg/G2/run1_app.log onClick="check_link('/home/choij/workspace/ParticlePhysics/HepTools/MG5_aMC_v2_7_3/gg_to_gg/SubProcesses/P1_gg_gg/../../SubProcesses/P1_gg_gg/G2/run1_app.log','../../SubProcesses/P1_gg_gg/G2/log.txt','/home/choij/workspace/ParticlePhysics/HepTools/MG5_aMC_v2_7_3/gg_to_gg/SubProcesses/P1_gg_gg/../../SubProcesses/P1_gg_gg/G2/run1_app.log')"> 3.057e+08 </a> </td>
+    <td align=right>  7.38e+05</td>
+    <td align=right>  217.04</td>
+    <td align=right>  15884.0</td>
+    <td align=right>  5.2e-05</td>
+</tr>
+
+</table>
+</center>
+<br><br><br>
+ </dl></body>
