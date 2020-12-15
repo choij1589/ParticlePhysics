@@ -15,7 +15,7 @@ public:
 	// define channel dependent differential cross section
 	double dXsec_dEta_with_pdf(const double &x1, const double &x2, const double &E_cm, const double &eta);
 	// Monte Carlo integrate to get the total xsection
-	void xsec(const double &E_cm, const double &etaCut);
+	double xsec(const double &E_cm, const double &etaCut);
 };
 
 #endif

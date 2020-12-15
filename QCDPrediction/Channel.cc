@@ -111,9 +111,9 @@ double Channel::dXsec_dEta_with_pdf(const double &x1, const double &x2, const do
 	return out * xf1 * xf2;
 }
 
-void Channel::xsec(const double &E_cm, const double &etaCut) {
+double Channel::xsec(const double &E_cm, const double &etaCut) {
 	// proceed MC integration
-	const unsigned int nEvents = 1000000;
+	const unsigned int nEvents = 100000;
 	double sum = 0;
 	const double volume = 2.*etaCut*1.*1.;
 	double xsecs[nEvents];
@@ -140,7 +140,9 @@ void Channel::xsec(const double &E_cm, const double &etaCut) {
 
 	const double out = exp * volume; // I = V<f>
 	const double err = Sqrt(variance);
-	cout << "Total xsec for " << __channel << ": " << out << " [pb]" << endl;
-	cout << "Total xsec error for " << __channel << ": " << err << " [pb]" << endl;
-	cout << "\n";
+	//cout << "Total xsec for " << __channel << ": " << out << " [pb]" << endl;
+	//cout << "Total xsec error for " << __channel << ": " << err << " [pb]" << endl;
+	//cout << "\n";
+	
+	return out;
 }		
