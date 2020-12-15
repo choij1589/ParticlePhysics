@@ -8,7 +8,7 @@ private:
 	XsecTools* __calc = nullptr;
 	string __channel;
 public:
-	Channel(const int lhaid);
+	Channel(const int lhaidi);
 	~Channel();
 	
 	void set_channel(const string &channel) { __channel = channel;}
